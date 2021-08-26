@@ -1,0 +1,11 @@
+[package]
+name = "pomodoro-clock"
+version = "0.1.0"
+authors = ["Tw <wei.tan@intel.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4.19"
+serde = "1.0.130"
+serde_json = "1.0.67"
+zellij-tile = "0.18.0"

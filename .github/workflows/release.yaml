@@ -1,0 +1,25 @@
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+name: Release
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+          target: wasm32-wasi
+      - name: Release Build
+        run: cargo build --release
+      - name: Release upload
+        uses: softprops/action-gh-release@v1
+        with:
+          files: target/wasm32-wasi/release/pomodoro-clock.wasm
