@@ -4,7 +4,9 @@ This is a Pomodoro Clock implemented as a [Zellij][zellij] plugin.
 
 It shows a Pomodoro time as well as current date time.
 
-[zellij]: https://github.com/zellij-org/zellij
+## Prerequisite
+
+You must install [Zellij][zellij] version `0.19.0` or above.
 
 ## Usage
 
@@ -28,3 +30,5 @@ Place it in your layout, e.g:
 
 - `<space>` or `mouse left-click`: Suspend/Resume the timer.
 - `r`: Reset the timer.
+
+[zellij]: https://github.com/zellij-org/zellij
