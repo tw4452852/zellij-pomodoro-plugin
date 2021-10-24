@@ -26,5 +26,5 @@ Place it in your layout, e.g:
 
 ### Shortcuts
 
-- `<space>`: Suspend/Resume the timer.
+- `<space>` or `mouse left-click`: Suspend/Resume the timer.
 - `r`: Reset the timer.

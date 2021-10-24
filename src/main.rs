@@ -135,16 +135,22 @@ struct State {
 }
 
 register_plugin!(State);
-
 impl ZellijPlugin for State {
     fn load(&mut self) {
-        subscribe(&[EventType::KeyPress, EventType::Timer, EventType::Visible]);
+        subscribe(&[
+            EventType::Key,
+            EventType::Timer,
+            EventType::Visible,
+            EventType::Mouse,
+        ]);
     }
 
     fn update(&mut self, event: Event) {
         match event {
-            Event::KeyPress(Key::Char('r')) => self.pomo = Pomo::new(),
-            Event::KeyPress(Key::Char(' ')) => self.pomo.toggle_pause(),
+            Event::Key(Key::Char('r')) => self.pomo = Pomo::new(),
+            Event::Key(Key::Char(' ')) | Event::Mouse(Mouse::LeftClick(_, _)) => {
+                self.pomo.toggle_pause()
+            }
             Event::Timer(t) => {
                 if self.active {
                     self.pomo.elapsed(Duration::from_secs_f64(t));
