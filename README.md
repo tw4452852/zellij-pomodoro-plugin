@@ -6,7 +6,7 @@ It shows a Pomodoro time as well as current date time.
 
 ## Prerequisite
 
-You must install [Zellij][zellij] version `0.19.0` or above.
+You must install [Zellij][zellij] version `0.20.0` or above.
 
 ## Usage
 
@@ -29,6 +29,6 @@ Place it in your layout, e.g:
 ### Shortcuts
 
 - `<space>` or `mouse left-click`: Suspend/Resume the timer.
-- `r`: Reset the timer.
+- `r` or `mouse right-click`: Reset the timer.
 
 [zellij]: https://github.com/zellij-org/zellij

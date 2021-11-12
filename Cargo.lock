@@ -208,9 +208,9 @@ checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
 
 [[package]]
 name = "zellij-tile"
-version = "0.19.0"
+version = "0.20.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2063f675cd15048d9ab32cf01b217c20c5177d6ab4ec7ac4f9274edc26211900"
+checksum = "772a4f37b81bf256ca216d109e899e216b3a8477768f8cdc8a7ea2da47b51c20"
 dependencies = [
  "serde",
  "serde_json",

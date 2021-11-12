@@ -147,7 +147,9 @@ impl ZellijPlugin for State {
 
     fn update(&mut self, event: Event) {
         match event {
-            Event::Key(Key::Char('r')) => self.pomo = Pomo::new(),
+            Event::Key(Key::Char('r')) | Event::Mouse(Mouse::RightClick(_, _)) => {
+                self.pomo = Pomo::new()
+            }
             Event::Key(Key::Char(' ')) | Event::Mouse(Mouse::LeftClick(_, _)) => {
                 self.pomo.toggle_pause()
             }
