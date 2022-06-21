@@ -1,5 +1,7 @@
 # Pomodoro Clock
 
+[![asciicast](https://asciinema.org/a/503172.svg)](https://asciinema.org/a/503172)
+
 This is a Pomodoro Clock implemented as a [Zellij][zellij] plugin.
 
 It shows a Pomodoro time as well as current date time.
